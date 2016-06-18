@@ -1,0 +1,74 @@
+.menu_tabla {
+	border: 1px solid #000000;
+	padding: 4px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	}
+.menu_cabecera {
+	background-color: #999999;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align: center;
+}
+.resumen {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	background-color: #CCCC99;
+	margin: 3px;
+	padding: 3px;
+}
+.categoria_contenido {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	border: 1px solid #000000;
+	margin: 3px;
+	padding: 3px;
+	width: 100%;
+}
+.categoria_fila {
+	border-bottom-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: dotted;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+}
+.carrito_cabecera {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	background-color: #CCCCCC;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0px;
+	padding: 0px;
+}
+.carrito_tabla {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	border: 1px solid #000000;
+	margin: 0px;
+	padding: 0px;
+}

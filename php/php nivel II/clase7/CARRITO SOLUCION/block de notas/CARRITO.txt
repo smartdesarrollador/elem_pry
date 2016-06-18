@@ -1,0 +1,33 @@
+create database libros_sc;
+
+use libros_sc;
+create table categorias(
+
+cat_id int(10) unsigned not null auto_increment,
+cat_nombre varchar(45) not null,
+primary key(cat_id)
+)engine=innodb auto_increment=5 default charset=latin1;
+
+insert into categorias(cat_id, cat_nombre) values
+(1,'PRGRAMACION WEB'),
+(2,'DESARROLLO WEB'),
+(3,'FICTION'),
+(4,'PRUEBAS');
+
+create table libros(
+precio double not null,
+isbn varchar(45) not null,
+cat_id int(10) unsigned not null auto_increment,
+descripcion varchar(45) not null,
+autor varchar(45) not null,
+titulo varchar(45) not null,
+primary key(cat_id)
+)engine=innodb auto_increment=5 default charset=latin1;
+
+insert into libros(precio,isbn,cat_id,descripcion,autor,titulo) values
+(10,'1',1,'PHP DEVELOPER COOKBOOK','STERLING HUGHES','PHP DEVELOPER'),
+(20,'2',2,' SAMSOM TEACH YOURSELF PHP','(MATT ZANDSTRA','PHP '),
+(30,'3',3,'LIBRO DE PRUEBA','PERCY ALMEYDA','LIBRO DE PRUEBA'),
+(40,'4',4,'PHP AND MYSQL - WEB DEPELOPMENT','JHON','PHP AND MYSQL');
+
+

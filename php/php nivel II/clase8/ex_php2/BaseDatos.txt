@@ -1,0 +1,43 @@
+create database bd1;
+use bd1;
+
+CREATE TABLE pelicula (id_pelicula INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                       nombre VARCHAR(20),
+                       precio_venta int,
+                       precio_alquiler int,
+                       stock int,
+                       id_genero int not null references genero(id_genero)
+                       on delete cascade on update cascade);
+
+CREATE TABLE genero (id_genero INT NOT NULL AUTO_INCREMENT PRIMARY KEY, nombre VARCHAR(20));
+
+CREATE TABLE movimiento (id_mov INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                         tipo varchar(20),
+                          id_pelicula int not null references pelicula(id_pelicula)
+                          on delete cascade on update cascade);
+
+/* Dos tipos de movimiento: Venta y Alquler*/
+
+
+insert into pelicula (nombre,precio_venta,precio_alquiler,stock, id_genero)
+values ('LA ERA DEL HIELO2', 30,3,120, 1);
+insert into pelicula (nombre,precio_venta,precio_alquiler, stock, id_genero)
+values ('ALIEN VS DEPREDADOR', 50,10,20, 5);
+insert into pelicula (nombre,precio_venta,precio_alquiler,stock, id_genero)
+values ('IRONMAN', 50,10,16, 2);
+
+
+
+insert into genero (nombre)
+values ('TERROR');
+insert into genero (nombre)
+values ('COMEDIA');
+insert into genero (nombre)
+values ('ACCION');
+insert into genero (nombre)
+values ('FUTURO');
+
+select * from movimiento;
+select * from pelicula;
+SELECT * FROM genero;
+SELECT nombre from pelicula where id_genero=id_pelicula;

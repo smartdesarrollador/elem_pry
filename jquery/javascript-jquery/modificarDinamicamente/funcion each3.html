@@ -1,0 +1,24 @@
+<html>
+<head>
+   <title>each del core de jQuery</title>
+  <script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+   $("p").each(function(i){
+      if(i%2==0){
+         $(this).css("background-color", "#FF0000");
+      }else{
+         $(this).css("background-color", "#FFFF00");
+      }
+   });
+}); 
+</script>
+</head>
+<body>
+<p>Primer párrafo</p>
+<p>Otro párrafo</p>
+<p>Tecer párrafo</p>
+<p>Uno más</p>
+<p>y acabo...</p>
+</body>
+</html> 

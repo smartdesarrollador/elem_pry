@@ -1,0 +1,4 @@
+CLASE 5
+correo gratuito 
+primero vamos a instalar el dotNetFx35 para despues utiñizar el SmarterMail6
+el .netframeword es una 

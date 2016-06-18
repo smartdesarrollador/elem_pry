@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Cycle Slideshow</title>
+<link href="../css/global.css" rel="stylesheet" type="text/css">
+<link href="../css/slideshow.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/jquery.cycle.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+													 
+
+$('#gallery').cycle({
+	fx: 'scrollRight',
+	timeout: 3000,
+	speed: 500,
+	delay: -2000,
+	pager: '#pager',
+	next: '#next',
+	prev: '#prev'
+});
+
+$('#playControl').toggle(
+		function() {
+			$('#gallery').cycle('pause');
+			$(this).text('Play');
+		},
+		function() {
+			$('#gallery').cycle('resume');
+			$(this).text('Pause');
+		});
+
+}); // end ready()
+</script>
+</head>
+<body >
+
+<div id="container">
+  <div id="controls">
+  <a href="#"><span id="prev" class="control">anterior</span></a>
+    <span id="pager"></span>
+    <a href="#"><span id="next" class="control">siguiente</span></a>
+    <a href="#"><span id="playControl" class="control">pausa</span></a>
+  </div>
+  <div id="gallery">
+
+<div><img src="../imagenes/Invierno.jpg" width="300" height="300"  /></div>
+<div><img src="../imagenes/loro.jpg" width="300" height="300"/></div>
+<div><img src="../imagenes/playa.jpg" width="300" height="300"/></div>
+ </div>
+  </div>
+  
+
+</body>
+</html>
+
+

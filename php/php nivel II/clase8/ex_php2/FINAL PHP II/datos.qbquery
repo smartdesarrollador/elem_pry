@@ -1,0 +1,31 @@
+﻿use datos;
+
+insert into genero values (1,'Accion');
+insert into genero values (2,'Comedia');
+insert into genero values (3,'Ficcion');
+insert into genero values (4,'Terror');
+insert into genero values (5,'Aventura');
+
+select * from genero;
+
+insert into estado values (1,'Disponible');
+insert into estado values (2,'No Disponible');
+
+delete from estado where id=3;
+
+select * from estado;
+
+insert into pelicula values(1,'Resident Evil','Terror',20,5);
+insert into pelicula values(2,'Linterna Verde','Ficcion',30,7);
+insert into pelicula values(3,'Los Pitufos','Aventura',40,15);
+insert into pelicula values(4,'Como ninios','Comedia',10,3);
+insert into pelicula values(5,'Asault','Accion',10.5,6);
+insert into pelicula values(6,'Viernes 13','Terror',20,5);
+insert into pelicula values(7,'Matrix','Ficcion',30,7);
+insert into pelicula values(8,'El Rey Leon','Aventura',40,15);
+insert into pelicula values(9,'Dura de Ligar','Comedia',10,3);
+insert into pelicula values(10,'Los Mercenarios','Accion',10.5,6);
+
+select * from pelicula;
+
+delete from pelicula;

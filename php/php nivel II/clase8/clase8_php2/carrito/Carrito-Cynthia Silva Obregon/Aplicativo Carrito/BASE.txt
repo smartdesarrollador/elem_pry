@@ -1,0 +1,65 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.3
+-- http://www.phpmyadmin.net
+-- 
+-- Servidor: localhost
+-- Tiempo de generación: 25-09-2011 a las 20:59:16
+-- Versión del servidor: 5.0.51
+-- Versión de PHP: 5.2.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- Base de datos: `libros_sc`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `categorias`
+-- 
+
+CREATE TABLE `categorias` (
+  `cat_id` int(11) NOT NULL,
+  `cat_nombre` varchar(50) NOT NULL,
+  PRIMARY KEY  (`cat_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- 
+-- Volcar la base de datos para la tabla `categorias`
+-- 
+
+INSERT INTO `categorias` VALUES (1, 'PROGRAMACION WEB');
+INSERT INTO `categorias` VALUES (2, 'DESARROLLO WEB');
+INSERT INTO `categorias` VALUES (3, 'FICTION ');
+INSERT INTO `categorias` VALUES (4, 'JARDINERIA');
+INSERT INTO `categorias` VALUES (5, 'PRUEBAS');
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `libros`
+-- 
+
+CREATE TABLE `libros` (
+  `isbn` varchar(30) NOT NULL,
+  `titulo` varchar(100) NOT NULL,
+  `autor` varchar(100) NOT NULL,
+  `precio` float NOT NULL,
+  `descripcion` varchar(100) NOT NULL,
+  `cat_id` int(11) NOT NULL,
+  `imagen` varchar(100) default NULL,
+  PRIMARY KEY  (`isbn`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- 
+-- Volcar la base de datos para la tabla `libros`
+-- 
+
+INSERT INTO `libros` VALUES ('0672319241', 'PHP22 DEVELOPER COOKBOOK', 'STERLING HUGHES AND ANDREI ZMI', 39.99, 'LIBRO PARA ELABORACION DE PAGINAS WEB', 1, '0672319241');
+INSERT INTO `libros` VALUES ('0672318040', 'SANSON TEARCH YOURSELF PHP4 IN 24 HOURS', 'MATT ZANDTRA', 24.99, 'LIBRO DE DESARROLLO WEB A TRAVES DE CODIGOS PHP4', 2, '0672318040');
+INSERT INTO `libros` VALUES ('9996004700000', 'LIBRO DE PRUEBA', 'PERCY ALMEYDA', 50.99, 'LIBRO DE EJERCICIOS RESULETOS DE PHP4', 5, '9996004700000');
+INSERT INTO `libros` VALUES ('0672317842', 'PHP AND MYSQL', 'CYNTHIA SILVA OBREGON', 50.3, 'LIBRO DE DESARROLLO WEB DE PHP CON MYSQL', 1, '0672317842');
+INSERT INTO `libros` VALUES ('1452168725', 'JAVA SCRIPT', 'JOSE MARIA ARGUEDAZ', 45.99, 'LIBRO CON EJEMPLOS A TRAVEZ DE CODIGOS JAVA SCRIPT', 1, '1452168725');
+INSERT INTO `libros` VALUES ('9874521358', 'PHP AND MYSQL 2', 'CARLOS CASTILLO TORRES', 34.5, 'LIBRO DE ACCESO A BASE DE DATOS ', 1, '9874521358');
+INSERT INTO `libros` VALUES ('5462587139', 'PROGRAMACION WEB', 'MARIA FERNANDEZ HURTADO', 28.4, 'LIBRO ORIENTADO AL COMIENZO DE LA PROGRAMACION WEB PARA PRINCIPIANTES', 2, '5462587139');

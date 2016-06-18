@@ -1,0 +1,31 @@
+  Cristian Sanchez
+        PHP - Nivel II
+    mct.cristian@gmail.com
+  
+ Clase 1 - Mysql - Procesos
+      Mysql - Manejador de BD
+                          Unicidad de la Informacion e la Integracion relacional
+            PHP, tiene librerias que se relacionan con el MYSQL, esto se encuentra en el PHP.INI(php_mysql.dll, php_mysqli.dll)
+
+Comando del Mysql
+- mysql_connect - permite conectarme al servidor de base de datos
+   Formato
+    var_conex = mysql_connect(nom_serv,usuario,clave)
+
+- mysql_select_db - permite seleccionar la base de datos del servidor donde estamos trabajando.
+    Formato
+      mysql_select_db(nom_bd,var_conex)
+
+- mysql_close - permite cerrar la conexion anteriormente activa.
+
+- mysql_query - permite ejecutar un comando SQL, tomando como base la variable conexion.
+      Formato
+        var_result = mysql_query(sentenc_sql,var_conex)
+
+- mysql_fetch_array - permite poder trabajar con los datos obtenidos con el comando mysql_query, es una arreglo de registros. trabaja con la variable de conexion
+    formato
+       mysql_fetch_array(var_result) 
+
+- mysql_free_result - libera la memoria de la var result
+- mysql_close - cierra la conexion a la base de datos.
+   

@@ -1,0 +1,20 @@
+Comando MySql
+- Mysql_Connect - permite conectarme al servidor
+     formato
+           mysql_connect(nom_serv,usuario,clave)
+
+- Mysql_Select_Db - permite seleccionar y activar la base de datos
+     formatp
+            mysql_select_db(nom_bd,var_conexion) 
+
+- Mysql_Close - permite cerrar una conexion activa por elcomando mysql_select_db
+     formato
+            mysql_close(var_conexion)
+
+- Mysql_Query - permite ejecutar un sentencia sql, devolviendo los registros que se han solicitado.
+      formato
+             mysql_query(sentencia_sql,var_conex)
+
+- Mysql_fetch_array - permite manejar los registros obtenidos por el mysql_query, ingresandolos a una arrays de registros
+         formato
+              mysql_fetch_array(var_resultado_query)

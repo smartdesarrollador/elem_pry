@@ -1,0 +1,11 @@
+<html><body>
+<form enctype="multipart/form-data" action="subir.php" method="post">
+<!--
+con este input "oculto" establecemos el limite maximo del tamaño del fichero a trasnferir, En este ejemplo  90.000 bytes=90k !-->
+<input type="hidden" name="linm_tamaño" value="900000">
+<p><b>Archivo a Trasferir<b><br>
+<input type="file" name="archivo"></p>
+<p><input type="submit" name="enciar" value="Aceptar"></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿create database BDSistemas;
+use BDsistemas;
+
+create table personal(
+codigo int,
+nombre varchar(25),
+direccion varchar(50),
+edad int,
+sueldo int);
+-- sentencia insert
+insert into personal(codigo,nombre,direccion,edad,sueldo);
+
+insert into personal values(1,'fatima sanchez','lima',25,3000);
+insert into personal values(2,'andrea palacios', 'comas',19,1980);
+insert into personal values(3,'lili huachez', 'lince',41,2500);
+insert into personal values(4,'luis garcia', 'surco',19,1980);
+insert into personal values(5,'silvia tafur', 'ate',19,1980);
+insert into personal values(6,'pedro ruiz', 'lima',19,1980);
+insert into personal values(7,'juan guzman', 'olivos',19,1980);
+insert into personal values(8,'jorge luis', 'san miguel',19,1980);
+insert into personal values(9,'pedro', 'magdalena',19,1980);
+insert into personal values(10,'luis', 'ate',19,1980);
+
+-- sentencia select
+select * from personal;
+
+select codigo,nombre, sueldo, from personal;
+select * from personal where direccion = 'lima ';
+select * from personal where edad >= 18 and edad<=30;
+select * from personal where edad <=30 or direccion ='lima';
+select * from personal where edad between 18 and 40;
+select * from personal where codigo=1 or codigo=4 or codigo=6;
+select * from personal where codigo in (1,4,6);
+
+select sum(sueldo) from personal;
+select max(sueldo) from personal;
+select min(sueldo) from personal;
+select avg(sueldo) from personal;
+
+select * from personal;
+select * from personal where nombre like 'l%';
+select * from personal where nombre like '%z';
+select * from personal where nombre like '_i%';
+select * from personal where nombre like '%E%';
+
+update personal set nombres='fatima sanchez';
+where codigo=1;
+
+delete from personal where codigo=7;

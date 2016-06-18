@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin t&iacute;tulo</title>
+<link href="../css/selectores.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+/*document.write(valor);*/
+
+
+$('#enviar ').click(function(){
+var valor=$('#textfield ').val();
+var valor2=$('input[name=email]:checked ').val();
+var valor3=$('#jumpMenu :selected').val();
+alert(valor +"   "  +  valor2 +"     "   +    valor3);
+
+});
+
+
+
+
+
+
+
+
+
+});//fin de document
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+</head>
+
+<body>
+
+  <label>
+  <input type="text" name="textfield" id="textfield" />
+  </label>
+  <label></label>
+  
+  <p>
+    <label></label>
+    <label>
+    <input type="radio" name="email" id="radio" value="primero" />
+    
+	</label>
+primero
+<label>
+<input type="radio" name="email" id="radio2" value="segundo" />
+</label>
+segundo</p>
+<p>
+    <label></label>
+    <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+      <option>uno</option>
+      <option>dos</option>
+    </select>
+</p>
+  <p>
+    <label></label>
+    <a id="enviar" href="#">enviar</a></p>
+  <p>&nbsp;</p>
+<p>
+    <label></label>
+  </p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div>
+  <div id="contenedor"></div>
+</div>
+<p>&nbsp;</p>
+</body>
+
+
+</html>

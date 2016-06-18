@@ -1,0 +1,36 @@
+instalacion de mysql 5.0
+
+1-primero instalar el setup
+2-poner next 
+3-poner seleccionado typical luego next
+4-luego instalar
+5-luego aparecera otra ventana donde pondremos next
+6-luego next
+7-poner seleccionado "configure the MySQL Server now" luego finish
+8-luego aparecera otra ventana donde debemos poner next
+9-poner "Detailed Configuration" luego next
+10-luego seleccionar Developer Machine
+11-luego seleccionar "MultiFuncional Database" y presionar next 
+12-deve estar en disco duro "C" y presionar next
+13-luego seleccionar "Decision Support(DSS)/OLAP" poner 15
+14-luego todo seleccionado y next
+15-se selecciona "Standard Character Set" luego next
+16-debe estar todo seleccionado luego next
+17-luego poner la contraseña y confirmar la contraseña y marcar donde dice "Enable root access from remote machines" y luego next
+18-luego execute
+19-se debe poner con signo correcto todos los circulos y luego finish
+
+instalacion mysql-gui-tools-5.0-r12-win32
+
+1-presionar next
+2-poner aceptar y luego next
+3-se elige el lugar donde debe de estar guardado luego next
+4-seleccionar complete luego next
+5-luego instalar
+6-luego aparece otra ventana donde debemos poner next y next otra vez y luego finish
+
+configuracion mysql
+
+1-ir al "C" luego a WINDOWS  luego al archivo php
+2-luego buscar ";extension=php_mysql.dll" y ";extension=php_mysqli.dll" y quitarles los punto y coma.
+3-luego reiniciar la computadora

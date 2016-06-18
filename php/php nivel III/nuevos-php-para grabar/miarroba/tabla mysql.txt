@@ -1,0 +1,16 @@
+CREATE TABLE personal (
+  codigo int(11) default NULL,
+  nombre varchar(25) default NULL,
+  direccion varchar(50) default NULL,
+  edad int(11) default NULL,
+  sueldo int(11) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+INSERT INTO personal (codigo,nombre,direccion,edad,sueldo) VALUES 
+ (15,'luis','independencia',25,3000),
+ (5,'julian','la molina',20,2000),
+ (15,'shakira','san miguel',25,1500),
+ (10,'raul','los olivos',25,3000),
+ (17,'jorge','lince',21,2700),
+ (21,'ricardo','san borja',24,1800);

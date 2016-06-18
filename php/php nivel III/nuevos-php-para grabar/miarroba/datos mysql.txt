@@ -1,0 +1,4 @@
+base de datos : mundoweb5
+servidor: mysql.webcindario.com
+usuario:   mundoweb5
+contraseña :a1sistemab2web

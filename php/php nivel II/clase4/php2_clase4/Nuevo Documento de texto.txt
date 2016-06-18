@@ -1,0 +1,22 @@
+Create database encuesta;
+
+Use encuesta;
+
+CREATE TABLE Preg_encuesta (
+  encid int(11) NOT NULL auto_increment,
+  encprg varchar(50) default NULL,
+  encrpt1 varchar(50) default NULL,
+  encrpt2 varchar(50) default NULL,
+  encrpt3 varchar(50) default NULL,
+  encrpt4 varchar(50) default NULL,
+  encval1 int(11) NOT NULL default '0',
+  encval2 int(11) NOT NULL default '0',
+  encval3 int(11) NOT NULL default '0',
+  encval4 int(11) NOT NULL default '0',
+  enctot int(11) NOT NULL default '0',
+  PRIMARY KEY  (encid)
+);
+insert Preg_encuesta(encprg,encrpt1,encrpt2,encrpt3,encrpt4)
+values('Encuesta Equipos','Alianza Lima','Univers.','S Cristal','Cienciano');
+
+Select * from Preg_encuesta;

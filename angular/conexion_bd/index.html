@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title> mi primer angular</title>
+</head>
+
+<body ng-app>
+    <table ng-controller="control">
+        <tr>
+          
+           <th>nombre</th>
+           <th>apellido</th>
+           <th>nota</th>
+        </tr>
+        <tr ng-repeat="post in posts">
+            
+            <td>{{post.nombre}}</td>
+            <td>{{post.apellido}}</td>
+            <td>{{post.nota}}</td>
+         </tr>
+     </table>
+
+     <script type="text/javascript" src="js/angular.min.js"></script>
+ <script type="text/javascript" src="controlador.js"></script>
+ </body>
+ 
+ </html>

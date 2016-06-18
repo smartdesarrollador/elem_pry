@@ -1,0 +1,13 @@
+b103-11
+admin
+
+
+localhost.com
+
+_________________________________________
+
+
+
+http://localhost:9998/Default.aspx?ViewLicensing=true#page=/DomainAdmin/frmUsers.aspx?|section=AdminManage
+
+http://localhost:9998/login.aspx

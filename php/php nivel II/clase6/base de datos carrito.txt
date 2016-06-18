@@ -1,0 +1,22 @@
+create database libros_sc;
+
+use libros_sc;
+
+create table libros(
+   id int unsigned not null auto_increment,
+titulo varchar(50)  not null,
+ autor varchar(50)   default null,
+descripcion(200) text not  null,
+precio int(11) not null ,
+isbn varchar(100) default null,
+primary key(id)
+
+);
+
+insert into libros(id,titulo,autor,descripcion,precio,isbn)values
+(1,'php1','autor1','descripcion1',30,'0672317842.jpg'),
+(2,'php2','autor2','descripcion2',29,'0672318040.jpg'),
+(3,'php3','autor3','descripcion3',40,'0672319241.jpg'),
+(4,'php4','autor4','descripcion4',37,'9996004700000.jpg');
+
+select * from libros;

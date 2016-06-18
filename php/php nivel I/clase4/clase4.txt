@@ -1,0 +1,15 @@
+Programacion php - Script(codigo)
+
+Asp --- script --- Asp.Net(Herramienta Web)
+                                    Html - Controles Asp.net - Asp(script)
+
+Pagina Web --- Html - php(script)
+  Formularios
+      formato
+         <form action="formulario_procesa" method="post/get">
+         </form>
+    Control
+ *     <input type="tipo_control" name="texto" value="texto" size="tamaño" 
+           maxlength="valor" ........>
+
+         type(tipos) :  text|password|checkbox|radio|submit|reset|file|hidden|image|button
