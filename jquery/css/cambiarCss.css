@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+#capa {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	background-color: #FFFF00;
+	border: thick solid #FF0000;
+	top: 151px;
+	left: 17px;
+}
+
+body{
+	background:#3F0;
+}

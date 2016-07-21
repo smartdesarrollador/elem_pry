@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin t&iacute;tulo</title>
+<link href="../css/atributos.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('div > p > h3 ' ).each(function(){
+$('p').prepend('<h3>que</h3>');
+
+});
+
+
+});//fin de document 
+</script>
+
+<style type="text/css">
+<!--
+div {
+	background-color: #FF0000;
+}
+p {
+	font-family: "Courier New", Courier, monospace;
+	color: #FFFF00;
+}
+-->
+</style>
+</head>
+
+<body>
+<div ><p>hola</p></div>
+<p>texto fuera1</p>
+<div ><p>hola mundo</p></div>
+<p>texto fuera1</p>
+<p>texto fuera1</p>
+<div ><p>hola a todos</p></div>
+
+</body>
+
+
+</html>

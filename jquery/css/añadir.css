@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#contenedor {
+	background-color: #FFFF00;
+	height: 200px;
+	width: 800px;
+}
+#capa {
+	background-color: #00FF00;
+	height: 100px;
+	width: 800px;
+}

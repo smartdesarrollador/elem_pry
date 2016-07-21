@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#capa {
+	background-color: #FFFF00;
+}
+#fuente {
+	color: #00FF00;
+}
+.error {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 36px;
+	font-weight: bold;
+	color: #FFFF00;
+	background-color: #00FF00;
+}
+body {
+	background-color: #00FFFF;
+	color: #FFFF00;
+}
+#hola {
+	background-color: #FFFF00;
+	height: 50px;
+	width: 50px;
+}

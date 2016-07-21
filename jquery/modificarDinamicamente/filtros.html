@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin t&iacute;tulo</title>
+
+<style type="text/css">
+<!--
+.color{
+	background-color: #FF0000;
+}
+.color2 {
+	background-color: #FFFF00;
+}
+-->
+</style>
+<link href="../css/filtros.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+$('.elementosPares tr:even').addClass('color'); 
+$( '.not tr:not(.fila)').addClass('color2'); 
+
+$('a:contains(click)').click(function(){
+
+alert("filtro CONTAINS");
+});
+
+
+
+
+});//fin de document 
+</script>
+
+</head>
+
+<body>
+<h1>filtro even</h1>
+<table  width="200" border="1" class="elementosPares">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+
+<p>&nbsp;</p>
+<h1>filtro not</h1>
+<table width="310" border="1" class="not">
+  <tr>
+    <td width="118">&nbsp;</td>
+    <td width="29">&nbsp;</td>
+    <td width="141">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr class="fila">
+    <td>fila 3</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h1>filtro contains</h1>
+<p><a href="#">click</a></p>
+<p><a href="#">click</a></p>
+<p><a href="#">click</a></p>
+<h1>filtro has </h1>
+<p>falta</p>
+<h1>filtro hidden</h1>
+<p>falta</p>
+<h1>filtro visible</h1>
+<p>falta</p>
+<p>&nbsp;</p>
+</body>
+
+
+</html>
+
