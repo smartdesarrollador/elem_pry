@@ -4,17 +4,34 @@
 $query = "select * from alumno";
 $resultado = $mysqli->query($query);
 $arr=array();
+
+
 if($resultado->num_rows > 0){
 	while($row=$resultado->fetch_assoc()){
 		$arr[]=$row;
 	}
 }
 
-$json_respon = json_encode($arr);
+$a=2;
+$b=8;
+$c=2+8;
+
+$valor="hola";
+$reemplazos = array(0=>array('nombre'=>"lolita-$valor-$c"));
+
+
+$cesta = array_replace_recursive($arr, $reemplazos);
+
+$json_respon = json_encode($cesta);
 
 echo $json_respon; 
 
+
 /*
+
+
+
+
 
 include('conexion.php');
 
